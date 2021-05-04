@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    border : 1px solid black;
+    margin: 10%;
+    padding:10%;
+}
+.right{
+    border : 1px solid black;
+    margin: 10%;
+    padding:10%;
+}
+
+h2{
+    background-color:skyblue;
+}
+
+.screen{
+    padding:10%;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 0;
+    top: 0;
+    position: relative;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+}
+.leftt{
+    position: relative;
+    right: 0;
+}

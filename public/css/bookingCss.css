@@ -1,0 +1,28 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myContainer{
+    justify-content: center;
+    border:1px solid black;
+    text-align: center;
+}
+
+.myCol{
+    border:1px solid black;
+    padding:5%;
+    width: 20px;
+    height: 20px;;
+    margin: 5px;
+    
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+.skyblue{
+    background-color: skyblue;
+}
