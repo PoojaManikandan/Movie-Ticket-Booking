@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                height: 425px;
+                background-image: url('../public/images/userSignupPicture.jpg');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                
+
+            }
+            .box{
+                width: 650px;
+                padding: 10px;
+                border-radius: 20px;
+                opacity: 0.7;
+                background-color: lavender;
+                border-bottom: 10px groove mediumpurple;
+                border-right: 10px groove mediumpurple	;
+            }
+            input[type="reset"]{
+                width: 50%;
+                background-color: #f5f5f1;
+                background-image: linear-gradient(315deg, #f5f5f1 0%, #e50914 74%);
+                border-radius: 20px;
+            }
+            input[type="submit"]{
+                width: 50%;
+                background-color: #27a770;
+                background-image: linear-gradient(315deg, #27a770 0%, #efefef 74%);
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>SignUp Form</h2>
+        <div class="box">
+            <form method="POST" action="signup">
+                <label for="email"><b>Email</b></label><br>
+                <input type="email" id="email" placeholder="Enter Email"  name="email" style="width:97%;background-color: transparent; padding: 7px;" required><br>
+                <label for="username"><b>Username</b></label><br>
+                <input type="text" id="username" placeholder="Enter username"  name="username" style="width:97%;background-color: transparent; padding: 7px;" required><br>
+
+                <label for="password"><b>Password</b></label><br>
+                <input type="password" id="password" placeholder="Enter Password" name="password" style="width:97%;background-color: transparent; padding: 7px;" required><br>
+                <label for="confirmPassword"><b>Repeat Password</b></label><br>
+                <input type="password" id="confirmPassword" placeholder="Repeat Password" name="confirmPassword" style="width:97%;background-color: transparent; padding: 7px;" required><br><br>
+                <label for="phoneNumber"><b>Phone Number</b></label><br>
+                <input type="tel" id="phoneNumber" placeholder="Enter Phone Number"  name="phoneNumber" style="width:97%;background-color: transparent; padding: 7px;" required><br>
+
+                <label>To create an account you have to agree<a href="">Terms and Privacy</a></label><br><br>
+                <input type="reset" value="Cancel"><input type="submit" value="Sign Up" onclick=" verifyPass()" >
+            </form>
+        </div>
+        
+    </body>
+</html>

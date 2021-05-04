@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../public/css/manageTicketsCss.css">
+    <title>BookYourScreen</title>
+</head>
+<body>
+    <nav>
+        <a href="/adminloginView"><button>Back</button></a>
+    </nav>
+    <form class="boxx" method="POST" action="manageTicket">
+        <table>
+            <tr><td colspan="2"><h3>Enter the Seat details</h3></td></tr>
+            <tr>
+                <td><label for="screen">Screen Number</label></td>
+                <td><input type="number" name="screen" id="screen" required></td>
+            </tr>
+            <tr>
+                <td><label for="seatNumber">Seat Number</label></td>
+                <td><input type="number" name="seatNumber" id="seatNumber" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" name="submit" id="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
